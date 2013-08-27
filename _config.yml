@@ -1,4 +1,5 @@
 markdown: rdiscount
 pygments: true
+baseurl: /olivia-uhlig.github.io
 exclude:
   -ignore
