@@ -1,0 +1,146 @@
+@linkcol: #22587b;
+.fancyBorder(){
+  border-style:solid !important;
+  border-width:1px !important;
+  border-color: @linkcol !important;
+}
+
+.shadow(@col : #22587b){
+
+  -moz-box-shadow:5px 5px 5px @col;// #e2e2e2; /* FF3.5+ */
+  -webkit-box-shadow:5px 5px 5px @col;//5px 5px 5px #e2e2e2;/*Saf3+, Chr*/
+  box-shadow:5px 5px 5px @col;//5px 5px 5px #e2e2e2; /*Op10.5, IE 9, FF4*/
+  // filter:progid:DXImageTransform.Microsoft.Shadow  ⏎
+  // (color=#e2e2e2, Direction=135, Strength=5); /* IE6-7 */
+   -ms-filter:"progid:DXImageTransform.Microsoft.Shadow  (color=#222222, Direction=180, Strength=3)"; /* IE8 */
+  // zoom:1; /* trigger hasLayout */
+}
+
+
+*{
+  margin:0;
+}
+html, body{
+  min-height: 100%;
+}
+body{
+
+  font-family: 'Cardo', serif;
+  color:#262626;
+  background-image:url(../images/squairy_light/squairy_light.png);
+  background-repeat: repeat;
+
+}
+#wrapper{
+padding: 10% 20% 1em 20%;  /*  top    1em  padding  */
+                             /*  right  3px  padding  */
+                             /*  bottom 30px padding  */
+                             /*  left   5px  padding  */
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+
+
+}
+#page-wrapper{
+  width:100%;
+  overflow: hidden;
+}
+// .image-wrap{
+// width:30%;
+
+//     float: left;
+//   margin-right: 2em;
+// }
+.list-wrap{
+ul{
+list-style-type: none;
+li:first-child {
+     display:inline-block;
+}
+li{
+  .image-wrap{
+
+  img{
+    // .shadow(black);
+    // .fancyBorder;
+ max-width: 70%;
+  }
+
+  }
+
+}
+}
+}
+
+
+
+a{
+  text-decoration: none;
+  color: @linkcol;
+}
+
+a:hover{
+color: #626d7b;
+}
+
+
+hr{
+ margin-top:1em;
+ margin-bottom:1em;
+}
+
+
+// a:visited{
+// color:black;
+// }
+
+footer{
+  ul#legal-links{
+    text-align: left;
+  list-style-type: none;
+  li{
+  display: inline;
+  padding-right: 1em;
+  }
+  }
+}
+
+// footer, .push {
+// height: 4em;
+// }
+
+/* Landscape phones and down*/
+ @media (max-width: 767px) {
+.image-wrap{
+  width:100%;
+  float:none;
+  }
+ .list-wrap{
+  font-size: 0.8em;
+  padding: 0;
+  margin:0;
+  ul{
+    padding:0;
+  }
+ }
+ footer{
+  font-size: 0.9em;
+ }
+ }
+
+
+/* Landscape phone to portrait tablet*/
+
+ @media (max-width: 767px) {  }
+
+/*Portrait tablet to landscape and desktop*/
+ @media (min-width: 768px) and (max-width: 979px) { }
+
+/* Large desktop*/
+
+ @media (min-width: 980px) and (max-width: 1199px) {  }
+
+
+ @media (min-width: 1200px) {  }

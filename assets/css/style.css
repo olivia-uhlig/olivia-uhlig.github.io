@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: 'Cardo', serif;
+  color: #262626;
+  background-image: url(../images/squairy_light/squairy_light.png);
+  background-repeat: repeat;
+}
+#wrapper {
+  padding: 10% 20% 1em 20%;
+  /*  top    1em  padding  */
+
+  /*  right  3px  padding  */
+
+  /*  bottom 30px padding  */
+
+  /*  left   5px  padding  */
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+#page-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.list-wrap ul {
+  list-style-type: none;
+}
+.list-wrap ul li:first-child {
+  display: inline-block;
+}
+.list-wrap ul li .image-wrap img {
+  max-width: 70%;
+}
+a {
+  text-decoration: none;
+  color: #22587b;
+}
+a:hover {
+  color: #626d7b;
+}
+hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+footer ul#legal-links {
+  text-align: left;
+  list-style-type: none;
+}
+footer ul#legal-links li {
+  display: inline;
+  padding-right: 1em;
+}
+/* Landscape phones and down*/
+@media (max-width: 767px) {
+  .image-wrap {
+    width: 100%;
+    float: none;
+  }
+  .list-wrap {
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+  }
+  .list-wrap ul {
+    padding: 0;
+  }
+  footer {
+    font-size: 0.9em;
+  }
+}
+/* Landscape phone to portrait tablet*/
+@media (max-width: 767px) {
+  
+}
+/*Portrait tablet to landscape and desktop*/
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Large desktop*/
+@media (min-width: 980px) and (max-width: 1199px) {
+  
+}
+@media (min-width: 1200px) {
+  
+}
