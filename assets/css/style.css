@@ -39,6 +39,10 @@ body {
 .list-wrap ul li .image-wrap img {
   max-width: 70%;
 }
+li.legal-links {
+  display: inline;
+  white-space: nowrap;
+}
 a {
   text-decoration: none;
   color: #22587b;
