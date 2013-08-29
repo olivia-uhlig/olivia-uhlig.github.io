@@ -28,16 +28,17 @@ body {
 }
 #page-wrapper {
   width: 100%;
-  overflow: hidden;
 }
 .list-wrap ul {
   list-style-type: none;
 }
-.list-wrap ul li:first-child {
-  display: inline-block;
-}
-.list-wrap ul li .image-wrap img {
-  max-width: 70%;
+.list-wrap ul li .image-shadow-wrap .image-wrap {
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 400px;
+  background-image: url(../images/image12.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 li.legal-links {
   display: inline;
@@ -78,6 +79,15 @@ footer ul#legal-links li {
   }
   footer {
     font-size: 0.9em;
+  }
+}
+@media (max-width: 480px) {
+  .list-wrap ul {
+    list-style-type: none;
+  }
+  .list-wrap ul li .image-shadow-wrap .image-wrap {
+    height: 150px;
+    width: 200px;
   }
 }
 /* Landscape phone to portrait tablet*/
